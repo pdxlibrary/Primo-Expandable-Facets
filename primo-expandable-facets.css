@@ -1,0 +1,31 @@
+/* expandable facets */
+.EXLFacetContainer {
+	border: 1px solid #dfdfdf; padding:0;
+}
+.EXLFacetContainer h3, .EXLFacetContainer h4 {
+	cursor: pointer;
+	font-size: 80%;
+	padding: .5em;
+	margin: 0;
+	background-color: #f8f8f8;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border:none;
+	color:#000;
+}
+.EXLFacetContainer.expandable.closed h3,.EXLFacetContainer.expandable.closed h4 {
+	background-image:url('../images/icon_open_subMenu.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-origin: content-box;
+}
+.EXLFacetContainer.expandable.open h3,.EXLFacetContainer.expandable.open h4 {
+	background-image:url('../images/icon_close_subMenu.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-origin: content-box;
+}
+.EXLFacetContainer div.EXLFacetActionsV2 {margin-bottom:0;}
+#facetList h1 {display:none;}
+.EXLFacetContainer ol {padding:0.5em;}

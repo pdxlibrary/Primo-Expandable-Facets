@@ -25,14 +25,16 @@ The primo-expandable-facets.css stylesheet and the primo-expandable-facets.js Ja
 
 If you upload the files to an external web server:
 ```html
-<script src="//www.yourlibrary.edu/js/send-search-to.js"></script>
+<link rel="stylesheet" type="text/css" href="//{REMOTE SERVER}/{REMOTE PATH}/primo-expandable-facets.css" media="all">
+<script src="//{REMOTE SERVER}/{REMOTE PATH}/primo-expandable-facets.js"></script>
 ```
+{REMOTE SERVER} - the hostname of your web server
+{REMOTE PATH} - the path to the file on your web server
 
 If you upload the files via Primo Back Office (PBO):
 ```html
-<script src="//{PRIMO SERVER DOMAIN NAME}/primo_library/libweb/uploaded_files/{VIEW NAME}/send-search-to.js"></script>
+<link rel="stylesheet" type="text/css" href="//{PRIMO SERVER DOMAIN NAME}/primo_library/libweb/uploaded_files/{VIEW NAME}/primo-expandable-facets.css" media="all">
+<script src="//{PRIMO SERVER DOMAIN NAME}/primo_library/libweb/uploaded_files/{VIEW NAME}/primo-expandable-facets.js"></script>
 ```
 {PRIMO SERVER DOMAIN NAME} - the domain for your Primo website (e.g. alliance-primo.hosted.exlibrisgroup.com)
 {VIEW NAME} - the name of the Primo view for which the file was uploaded
-
-#### Step 3) Configuration
